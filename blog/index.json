@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "magento-rest-api-guide",
+    "title": "Working with Magento 2 REST APIs: A Practical Guide",
+    "excerpt": "How to build, authenticate and consume Magento 2 REST APIs in real-world projects — from token auth to custom endpoints.",
+    "date": "2025-05-15",
+    "tags": ["Magento", "REST API", "PHP"],
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "shopify-liquid-custom-sections",
+    "title": "Building Dynamic Shopify Sections with Liquid & JavaScript",
+    "excerpt": "Learn how to create fully customizable Shopify theme sections using Liquid templating, schema settings, and vanilla JavaScript.",
+    "date": "2025-04-10",
+    "tags": ["Shopify", "Liquid", "JavaScript"],
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "google-sheets-api-php",
+    "title": "Automate Google Sheets with PHP — Inventory Sync Deep Dive",
+    "excerpt": "A step-by-step walkthrough of building a PHP + Google Sheets API integration for real-time inventory and order tracking.",
+    "date": "2025-03-22",
+    "tags": ["PHP", "Google Sheets API", "Automation"],
+    "readTime": "8 min read"
+  }
+]

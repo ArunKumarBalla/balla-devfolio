@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Blog — Balla Arun Kumar | Web Development Insights</title>
+  <meta name="description" content="Articles and insights on Magento, Shopify, PHP, JavaScript, and web development by Balla Arun Kumar." />
+  <meta name="keywords" content="Magento blog, Shopify development, PHP tutorials, web development, Balla Arun Kumar" />
+  <meta name="author" content="Balla Arun Kumar" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ballaarunkumar.dev/blog.html" />
+
+  <meta property="og:type" content="blog" />
+  <meta property="og:title" content="Blog — Balla Arun Kumar" />
+  <meta property="og:description" content="Web development insights on Magento, Shopify, PHP, and JavaScript." />
+  <meta property="og:url" content="https://ballaarunkumar.dev/blog.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">BAK<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="blog-main">
+    <div class="container">
+      <div class="blog-header">
+        <div class="section-tag">/ Blog</div>
+        <h1 class="section-title">Thoughts &amp; <em>Insights</em></h1>
+        <p class="blog-subtitle">Articles on web development, Magento, Shopify, PHP, and everything in between.</p>
+      </div>
+
+      <div class="blog-search-bar">
+        <input type="text" id="searchInput" placeholder="Search articles..." />
+        <div class="tag-filter" id="tagFilter">
+          <button class="filter-btn active" data-tag="all">All</button>
+        </div>
+      </div>
+
+      <div class="blog-list" id="blogList">
+        <div class="blog-loading">Loading articles...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">BAK<span class="dot">.</span></span>
+        <span class="footer-copy">© 2025 Balla Arun Kumar.</span>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Dynamic SEO via JS -->
+  <title>Blog Post — Balla Arun Kumar</title>
+  <meta name="description" content="" id="metaDesc" />
+  <meta name="author" content="Balla Arun Kumar" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="" id="ogTitle" />
+  <meta property="og:description" content="" id="ogDesc" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">BAK<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="post-main">
+    <div class="container post-container">
+      <a href="blog.html" class="back-link">← Back to Blog</a>
+
+      <article class="post-article" id="postContent">
+        <div class="post-loading">Loading article...</div>
+      </article>
+
+      <div class="post-share" id="postShare" style="display:none;">
+        <h4>Share this article</h4>
+        <div class="share-btns">
+          <a id="shareTwitter" href="#" target="_blank" rel="noopener" class="social-btn">Twitter</a>
+          <a id="shareLinkedIn" href="#" target="_blank" rel="noopener" class="social-btn">LinkedIn</a>
+          <button onclick="copyLink()" class="social-btn">Copy Link</button>
+        </div>
+      </div>
+
+      <div class="post-nav" id="postNav"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">BAK<span class="dot">.</span></span>
+        <span class="footer-copy">© 2025 Balla Arun Kumar.</span>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/marked.min.js"></script>
+  <script src="js/post.js"></script>
+</body>
+</html>
