@@ -106,13 +106,13 @@ async function fetchBlogIndex() {
     const res = await fetch('blog/index.json');
     if (!res.ok) return DEMO_POSTS;
     return await res.json();
-  } catch {
+  } /*catch {
     return DEMO_POSTS;
-  }
+  }*/
 }
 
 // ===== DEMO POSTS (fallback if no blog/index.json yet) =====
-const DEMO_POSTS = [
+/*const DEMO_POSTS = [
   {
     slug: 'magento-rest-api-guide',
     title: 'Working with Magento 2 REST APIs: A Practical Guide',
@@ -137,7 +137,7 @@ const DEMO_POSTS = [
     tags: ['PHP', 'Google Sheets API', 'Automation'],
     readTime: '8 min read'
   }
-];
+];*/
 
 // ===== DATE FORMATTER =====
 function formatDate(dateStr) {
