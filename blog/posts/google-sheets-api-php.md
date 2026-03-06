@@ -1,9 +1,9 @@
 ---
-title: Automate Google Sheets with PHP — Inventory Sync
-date: 2025-03-22
-tags: PHP, Google Sheets API, Automation
-readTime: 8 min read
-excerpt: A step-by-step PHP + Google Sheets API integration for real-time inventory and order tracking.
+title: "Automate Google Sheets with PHP - Inventory Sync"
+date: "2025-03-22"
+tags: "PHP, Google Sheets API, Automation"
+readTime: "8 min read"
+excerpt: "A step-by-step PHP + Google Sheets API integration for real-time inventory and order tracking."
 ---
 
 # Automate Google Sheets with PHP — Inventory Sync

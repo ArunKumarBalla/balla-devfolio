@@ -1,0 +1,11 @@
+# _config.yml
+# Tells Jekyll (GitHub Pages) to ignore the blog/posts folder entirely.
+# These .md files are loaded by JavaScript, not by Jekyll.
+
+exclude:
+  - blog/posts
+  - blog/
+  - js/
+  - css/
+  - README.md
+  - "*.zip"

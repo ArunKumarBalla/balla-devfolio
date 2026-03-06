@@ -1,9 +1,9 @@
 ---
-title: Working with Magento 2 REST APIs: A Practical Guide
-date: 2025-05-15
-tags: Magento, REST API, PHP
-readTime: 7 min read
-excerpt: How to authenticate and consume Magento 2 REST APIs in real-world projects — from token auth to custom endpoints.
+title: "Working with Magento 2 REST APIs: A Practical Guide"
+date: "2025-05-15"
+tags: "Magento, REST API, PHP"
+readTime: "7 min read"
+excerpt: "How to authenticate and consume Magento 2 REST APIs in real-world projects."
 ---
 
 # Working with Magento 2 REST APIs: A Practical Guide
