@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balla Arun Kumar — Full Stack Developer</title>
+  <meta id="meta-desc" name="description" content="" />
+  <meta id="meta-keys" name="keywords" content="" />
+  <meta name="author" content="Balla Arun Kumar" />
+  <meta name="robots" content="index, follow" />
+  <link id="canonical" rel="canonical" href="" />
+  <meta property="og:type" content="website" />
+  <meta id="og-title" property="og:title" content="" />
+  <meta id="og-desc" property="og:description" content="" />
+  <meta id="og-url" property="og:url" content="" />
+  <meta id="og-img" property="og:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta id="tw-title" name="twitter:title" content="" />
+  <meta id="tw-desc" name="twitter:description" content="" />
+  <script id="schema-json" type="application/ld+json"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>:root{--font-display:'Outfit',sans-serif;--font-mono:'JetBrains Mono',monospace;--font-body:'DM Sans',sans-serif;}</style>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">BAK<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+  <button class="theme-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle light/dark mode">🌙</button>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-dots"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-pill"><span class="pill-dot"></span>Available for work</div>
+      <h1 class="hero-name">
+        <span class="line1" id="heroLine1">Balla Arun</span>
+        <span class="line2" id="heroLine2">Kumar</span>
+      </h1>
+      <div class="hero-typing-wrap">
+        <span class="hero-typing"><span id="typingText"></span><span class="cursor"></span></span>
+      </div>
+      <p class="hero-desc" id="heroTagline"></p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats" id="heroStats">
+        <div class="stat"><div class="stat-n">4+</div><div class="stat-l">Years Exp.</div></div>
+        <div class="stat"><div class="stat-n">6+</div><div class="stat-l">Projects</div></div>
+        <div class="stat"><div class="stat-n">2</div><div class="stat-l">Platforms</div></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-avatar" id="cardAvatar">BAK</div>
+      <div class="card-rows">
+        <div class="card-row"><span class="card-label">Status</span><span class="open-badge"><span class="open-badge-dot"></span>Open to Work</span></div>
+        <div class="card-row"><span class="card-label">Location</span><span class="card-val" id="cardLocation"></span></div>
+        <div class="card-row"><span class="card-label">Specialty</span><span class="card-val">Magento · Shopify · PHP</span></div>
+        <div class="card-row"><span class="card-label">Email</span><span class="card-val" id="cardEmail"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="section-eyebrow">About</div>
+        <h2 class="section-title">Building digital<br><em>experiences</em> that last</h2>
+        <div id="aboutText"></div>
+        <div class="about-edu">
+          <h3>Education</h3>
+          <div id="eduList"></div>
+        </div>
+      </div>
+      <div id="aboutRight"></div>
+    </div>
+  </div>
+</section>
+
+<section class="skills section" id="skills">
+  <div class="container">
+    <div class="section-eyebrow">Skills</div>
+    <h2 class="section-title">Technical <em>Arsenal</em></h2>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<section class="projects section" id="projects">
+  <div class="container">
+    <div class="section-eyebrow">Projects</div>
+    <h2 class="section-title">Selected <em>Work</em></h2>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<section class="experience section" id="experience">
+  <div class="container">
+    <div class="section-eyebrow">Experience</div>
+    <h2 class="section-title">Career <em>Journey</em></h2>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<section class="blog section" id="blog">
+  <div class="container">
+    <div class="section-eyebrow">Blog</div>
+    <h2 class="section-title">Latest <em>Articles</em></h2>
+    <div class="blog-grid" id="blogGrid"><div class="loading">Loading posts…</div></div>
+    <div class="blog-cta">
+      <a href="blog.html" class="btn btn-outline">View All Articles →</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-eyebrow">Contact</div>
+    <h2 class="section-title">Let's <em>work</em> together</h2>
+    <div class="contact-grid">
+      <div>
+        <p id="contactIntro"></p>
+        <div class="cinfo-items" id="contactInfo"></div>
+        <div class="social-row" id="socialRow"></div>
+      </div>
+      <form class="cform" id="contactForm" onsubmit="submitForm(event)">
+        <div class="fgroup"><label for="fname">Name</label><input type="text" id="fname" name="name" placeholder="Your full name" required /></div>
+        <div class="fgroup"><label for="femail">Email</label><input type="email" id="femail" name="email" placeholder="you@email.com" required /></div>
+        <div class="fgroup"><label for="fmsg">Message</label><textarea id="fmsg" name="message" rows="5" placeholder="Tell me about your project…" required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <div id="fstatus" class="fstatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-logo">BAK<span>.</span></span>
+      <span class="footer-copy" id="footerCopy"></span>
+      <nav class="footer-nav"><a href="blog.html">Blog</a><a href="#projects">Work</a><a href="#contact">Contact</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
