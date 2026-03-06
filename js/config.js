@@ -24,16 +24,16 @@ window.SITE_CONFIG = {
   email: "ballaarunkumar05@gmail.com",
   phone: "+91 77023 72506",
   location: "Visakhapatnam, India",
-  github: "https://github.com/ballaarunkumar",
-  linkedin: "https://linkedin.com/in/ballaarunkumar",
+  github: "#https://github.com/ballaarunkumar",
+  linkedin: "#https://linkedin.com/in/ballaarunkumar",
   resumeUrl: "#", // link to your resume PDF
 
   /* ── SEO ──────────────────────────────────────────────────── */
   seo: {
-    siteUrl: "https://ballaarunkumar.dev",
+    siteUrl: "https://ballaarunkumar.work.gd/",
     description: "Balla Arun Kumar — Full Stack Developer specializing in Magento, Shopify, PHP & JavaScript with 4+ years of experience in Visakhapatnam, India.",
     keywords: "Balla Arun Kumar, Full Stack Developer, Magento Developer, Shopify Developer, PHP Developer, JavaScript, Visakhapatnam",
-    ogImage: "https://ballaarunkumar.dev/assets/og.jpg",
+    ogImage: "https://ballaarunkumar.work.gd/images/assets/og.jpg",
   },
 
   /* ── ABOUT ────────────────────────────────────────────────── */
