@@ -1,151 +1,143 @@
 # Balla Arun Kumar — Portfolio
 
-A clean, SEO-optimized developer portfolio with a no-database blog system powered by Markdown files.
+Clean, SEO-ready developer portfolio with light/dark mode, auto-typing hero, and a zero-database blog system.
 
-## 🗂 Project Structure
+## 🚀 Quick Start
+
+Open `index.html` in a browser. No build tools, no npm, no server needed.
+
+---
+
+## ✏️ HOW TO UPDATE EVERYTHING
+
+**There is ONE file you edit: `js/config.js`**
+
+Open it and you'll see clearly labelled sections. That's it — no touching HTML or other JS files.
+
+### Change your name / contact / links
+```js
+name: "Your Name",
+email: "you@email.com",
+github: "https://github.com/yourhandle",
+```
+
+### Add a typing role
+```js
+typingRoles: [
+  "Full Stack Developer",
+  "Your New Role Here",   // ← just add a line
+],
+```
+
+### Add a Project
+```js
+projects: [
+  {
+    title: "My New Project",
+    tags: ["PHP", "MySQL"],
+    period: "Jan 2025 – Present",
+    role: "Full-Stack Developer",
+    desc: "What the project does.",
+    highlights: [
+      "Key thing 1",
+      "Key thing 2",
+    ],
+    featured: false,   // set true to highlight it
+  },
+  // ... existing projects
+],
+```
+
+### Add a Blog Post (2 steps)
+
+**Step 1 — Create the markdown file:**
+
+Create `blog/posts/your-post-slug.md`:
+
+```markdown
+---
+title: Your Post Title
+date: 2025-06-01
+tags: PHP, Tutorial
+readTime: 5 min read
+excerpt: One line description shown in cards and SEO.
+---
+
+# Your Post Title
+
+Write your content here using **Markdown**.
+
+## Subheading
+
+Normal paragraph.
+
+\`\`\`php
+<?php echo "Hello!";
+\`\`\`
+
+> A blockquote tip
+
+- Bullet one
+- Bullet two
+```
+
+**Step 2 — Register it in config.js:**
+
+```js
+blogPosts: [
+  {
+    slug: "your-post-slug",       // must match the filename (without .md)
+    title: "Your Post Title",
+    excerpt: "One line description.",
+    date: "2025-06-01",
+    tags: ["PHP", "Tutorial"],
+    readTime: "5 min read",
+  },
+  // existing posts...
+],
+```
+
+Done! The post appears on the homepage preview, blog listing, and has its own page at `post.html?slug=your-post-slug`.
+
+---
+
+## 📁 File Structure
 
 ```
 portfolio/
 ├── index.html          ← Main portfolio page
 ├── blog.html           ← Blog listing page
-├── post.html           ← Blog post reader page
+├── post.html           ← Blog post reader
 ├── css/
-│   └── style.css       ← All styles
+│   └── style.css       ← All styles + color palette
 ├── js/
-│   ├── main.js         ← Core JS (nav, reveal, contact form)
-│   ├── blog.js         ← Blog listing logic
-│   ├── post.js         ← Post reader + markdown renderer
-│   └── marked.min.js   ← Markdown parser
+│   ├── config.js       ← ⭐ THE ONE FILE YOU EDIT
+│   ├── app.js          ← Core render engine
+│   ├── blog-page.js    ← Blog listing logic
+│   ├── post-page.js    ← Post reader logic
+│   └── md-parser.js    ← Markdown → HTML parser
 └── blog/
-    ├── index.json      ← Blog post registry (EDIT THIS to add posts)
     └── posts/
-        ├── my-post-slug.md   ← Actual blog post content
-        └── ...
+        └── your-slug.md  ← Your blog post content
 ```
 
 ---
 
-## ✍️ How to Add a Blog Post
+## 🎨 Colors
 
-### Step 1 — Create the Markdown file
-
-Create a new file in `blog/posts/` named with your post's slug:
-
-```
-blog/posts/your-post-slug.md
-```
-
-At the top of the file, add frontmatter between `---` lines:
-
-```markdown
----
-title: Your Post Title Here
-date: 2025-06-01
-tags: PHP, Magento, Tutorial
-readTime: 5 min read
-excerpt: A short one-line description of the post for cards and SEO.
----
-
-# Your Post Title Here
-
-Write your content here using standard Markdown...
-
-## Subheading
-
-Normal paragraph text.
-
-**Bold text**, *italic text*, `inline code`.
-
-\`\`\`php
-<?php
-echo "Hello World!";
-\`\`\`
-
-> A blockquote tip
-
-- List item one
-- List item two
-```
-
-### Step 2 — Register the post in `blog/index.json`
-
-Open `blog/index.json` and add an entry at the TOP of the array (newest first):
-
-```json
-[
-  {
-    "slug": "your-post-slug",
-    "title": "Your Post Title Here",
-    "excerpt": "A short one-line description of the post.",
-    "date": "2025-06-01",
-    "tags": ["PHP", "Magento", "Tutorial"],
-    "readTime": "5 min read"
-  },
-  ... existing posts ...
-]
-```
-
-That's it! The post will automatically appear on:
-- The blog listing page (`blog.html`)
-- The homepage preview section
-- The post reader (`post.html?slug=your-post-slug`)
-
----
-
-## 🌐 Deployment
-
-### GitHub Pages (Free)
-
-1. Push this folder to a GitHub repository
-2. Go to **Settings → Pages**
-3. Set source to **main branch / root**
-4. Your site will be live at `https://yourusername.github.io/repo-name`
-
-### Custom Domain
-
-1. Buy a domain (e.g., `ballaarunkumar.dev`)
-2. Add a `CNAME` file with your domain name
-3. Point your domain's DNS to GitHub Pages
-
----
-
-## 🔧 Customization
-
-### Update Personal Info
-Edit `index.html` — search for the relevant sections (about, contact, etc.)
-
-### Change Colors
-Edit `css/style.css` — the `:root` block at the top has all CSS variables:
-
+The color palette from colorffy.com is defined in `css/style.css` under `:root`.
+To change the accent color in dark mode, find:
 ```css
-:root {
-  --accent: #4fffb0;    /* Green accent — change to your color */
-  --bg: #0a0a0f;        /* Main background */
-  --text: #e8e8f0;      /* Main text color */
-  /* ... */
-}
+--accent: var(--p10);   /* #21ecf7 — bright cyan */
 ```
-
-### Add/Remove Projects
-Edit the `#projects` section in `index.html`
-
-### Update Skills
-Edit the `#skills` section in `index.html`
+And swap it for any of the palette variables like `--p20`, `--a10`, `--info10`, etc.
 
 ---
 
-## 📦 No Dependencies, No Build Step
+## 🌐 Deploy Free on GitHub Pages
 
-This portfolio requires **zero npm, zero build tools**. Just HTML, CSS, and JS files you can open directly in a browser or host on any static host.
+1. Push this folder to a GitHub repo
+2. Settings → Pages → Source: main branch / root
+3. Done! Live at `https://yourusername.github.io/repo-name`
 
----
-
-## 🔍 SEO Features
-
-- Semantic HTML5 structure
-- JSON-LD structured data (Person schema)
-- Open Graph tags for social sharing
-- Twitter Card meta tags
-- Canonical URLs
-- Dynamic meta title/description per blog post
-- Sitemap-friendly URL structure
+For a custom domain, create a `CNAME` file with your domain name.
